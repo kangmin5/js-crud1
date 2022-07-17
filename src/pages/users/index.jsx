@@ -7,10 +7,10 @@ const UsersPage = () => {
   return(
   <div>
     <Grid container spacing={2}>
-      <Grid item xs={12} md={4} lg={6}>
+      <Grid item xs={12} md={4} lg={4}>
         <MyForm/>
       </Grid>
-      <Grid item xs={12} md={8} lg={6}>
+      <Grid item xs={12} md={8} lg={8}>
         <Mytable/>
       </Grid>
     </Grid>

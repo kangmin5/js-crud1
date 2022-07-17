@@ -42,11 +42,11 @@ export default function Mytable() {
               <TableCell align="right">{row.email}</TableCell>
               <TableCell align="right">{row.password}</TableCell>
               <TableCell align="right">
-                <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >Submit</Button>
+                <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >수정</Button>
               </TableCell>
               <TableCell align="right">
                 <Button onClick={() => dispatch({ type: DELETE_USER_BY_ID, id:row.id })}
-                  fullWidth variant="contained" >Delete</Button>
+                  fullWidth variant="contained" >삭제</Button>
               </TableCell>
             </TableRow>
           ))}
