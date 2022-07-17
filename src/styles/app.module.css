@@ -1,0 +1,14 @@
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 245, 242);
+
+}
+.main{
+    width: 90%;
+    min-height: 750px;
+    background-color: white;
+}

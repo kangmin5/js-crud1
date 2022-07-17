@@ -1,0 +1,10 @@
+.container{
+    width:100vw;
+    height:200px;
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgb(62, 70, 70);
+}
+.container >p {
+    padding-top: 2rem;
+}
