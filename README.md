@@ -1,3 +1,9 @@
+서버 실행  :   json-server --watch users.json --port 4000
+서버가 실행 되었는지 확인 하려면 은 browser에서 localhost:/4000/users 를 하면 확인 가능하다.
+src>modules>apis>index.js 파일을 보면 port등을 수정할 수 있다.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
