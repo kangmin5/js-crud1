@@ -17,7 +17,7 @@ function App({ Component, pageProps }) {
         </div>
         <Footer/>
       </div>
-      </Provider>
+    </Provider>
   )
   
 }

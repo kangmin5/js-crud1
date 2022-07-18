@@ -1,45 +1,35 @@
 .container{
-
     width:90vw;
+    margin-top: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
 }
-.userList{
-    width: 42vw;
+.left{
+    width: 100%;
+    background-color: rgb(235, 216, 190);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border: 1px solid rgb(225, 224, 226);
+    
 }
-.ul1{
-    width:40vw;
-    list-style: none;
+.right{
+    width: 100%;
+    min-height: 750px;
+    background-color: rgb(181, 219, 231);
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-}
-.ul2{
-    width:40vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
-.li{
-    width:40vw;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
+.form{
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem 1rem 2rem;
+    margin: 3rem 2rem 2rem 1rem;
+    
 }
-.ul2:hover {
-    background-color: rgb(197, 187, 187);
-    cursor: pointer;
-
+.table{
+    width: 90%;
+    padding: 1rem 1rem 2rem;
+    margin: 3rem 2rem 3rem 1rem
+    
 }

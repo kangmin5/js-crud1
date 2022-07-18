@@ -1,22 +1,22 @@
 {
   "users": [
     {
-      "id": "pgvL0hDC",
-      "name": "강민",
-      "email": "mk@kangmin.kr",
-      "password": "1234"
-    },
-    {
       "id": "GEZaNCEJ",
       "name": "홍길동",
       "email": "kdhong@korea.com",
       "password": "1234"
     },
     {
-      "id": "H7Vpy0PP",
-      "name": "이순신",
-      "email": "sslee@dkdk.com",
-      "password": "1234"
+      "id": "nX5eKdx_",
+      "name": "김유신",
+      "email": "yskim@test.com",
+      "password": "1111"
+    },
+    {
+      "id": "2qOx2yKL",
+      "name": "김홍도",
+      "email": "kimhongdo@test.com",
+      "password": "1111"
     }
   ]
 }

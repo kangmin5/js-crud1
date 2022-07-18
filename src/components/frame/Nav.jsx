@@ -10,12 +10,12 @@ const Nav = () => {
             <ul className={styles.ul1}>
                 <Link href='/users'><li className={styles.li}>Users</li></Link>
                 <Link href='/posts'><li className={styles.li}>Post</li></Link>
-                <li className={styles.li}>About</li>
-                <li className={styles.li}>FAQ</li>
+                <Link href='/about'><li className={styles.li}>About</li></Link>
+                <Link href='/faq'><li className={styles.li}>FAQ</li></Link>
             </ul>
             <ul className={styles.ul2}>
-                <li className={styles.li}>Login</li>
-                <li className={styles.li}>Regiter</li>
+                <Link href='/login'><li className={styles.li}>Login</li></Link>
+                <Link href='/join'><li className={styles.li}>Regiter</li></Link>
             </ul>
         </div>  
     </div>

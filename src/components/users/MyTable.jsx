@@ -11,16 +11,18 @@ import { Button } from '@mui/material';
 import { setUserSlice, user } from 'modules/slices';
 import { deleteUsersSlice } from 'modules/slices/usersSlice';
 import { DELETE_USER_BY_ID, GET_USERS } from 'modules/types';
-
+import styles from 'styles/user.module.css'
 
 
 export default function Mytable() {
-  const rows = useSelector(state => state.users)
   const dispatch = useDispatch();
-  React.useEffect(()=> {dispatch({type:GET_USERS})})
+  const rows = useSelector(state => state.users)
+  React.useEffect(() => { dispatch({ type: GET_USERS }) })
+
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    <TableContainer component={Paper} className={styles.table}>
+      <h3>사용자목록</h3>
+      <Table aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
