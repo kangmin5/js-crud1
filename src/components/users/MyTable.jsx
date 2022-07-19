@@ -17,7 +17,7 @@ import styles from 'styles/user.module.css'
 export default function Mytable() {
   const dispatch = useDispatch();
   const rows = useSelector(state => state.users)
-  React.useEffect(() => { dispatch({ type: GET_USERS }) })
+  React.useEffect(() => { dispatch({ type: GET_USERS })},[dispatch])
 
   return (
     <TableContainer component={Paper} className={styles.table}>

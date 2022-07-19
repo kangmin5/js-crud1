@@ -1,21 +1,9 @@
 {
   "users": [
     {
-      "id": "GEZaNCEJ",
-      "name": "홍길동",
-      "email": "kdhong@korea.com",
-      "password": "1234"
-    },
-    {
-      "id": "nX5eKdx_",
-      "name": "김유신",
-      "email": "yskim@test.com",
-      "password": "1111"
-    },
-    {
-      "id": "2qOx2yKL",
+      "id": "mpej1mya",
       "name": "김홍도",
-      "email": "kimhongdo@test.com",
+      "email": "010-2222-3333",
       "password": "1111"
     }
   ],

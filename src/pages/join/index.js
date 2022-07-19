@@ -1,8 +1,11 @@
+import Join from 'components/Join/Join'
 import React from 'react'
 
 const JoinPage = () => {
   return (
-    <div>JoinPage</div>
+    <div>
+      <Join/>
+    </div>
   )
 }
 
