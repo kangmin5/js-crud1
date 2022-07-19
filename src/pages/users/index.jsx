@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material'
-import MyForm from 'components/users/MyForm'
-import Mytable from 'components/users/MyTable'
+import MyForm from 'components/Users/MyForm'
+import Mytable from 'components/Users/MyTable'
 import React from 'react'
 import styles from 'styles/user.module.css'
 

@@ -1,21 +1,19 @@
 import '../styles/globals.css'
-import styles from '../styles/app.module.css'
-import Nav from 'components/frame/Nav'
-import Footer from 'components/frame/Footer'
 import { Provider } from 'react-redux'
 import store from 'modules/store'
+import Layout from 'components/Frame/Layout'
 
 
 
 function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
-      <div className={styles.container}>
-        <Nav />
-        <div className={styles.main}>
-          <Component {...pageProps} />
-        </div>
-        <Footer/>
+      <div >
+        <Layout>
+          <div >
+            <Component {...pageProps} />
+          </div>
+        </Layout>
       </div>
     </Provider>
   )
