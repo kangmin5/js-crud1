@@ -14,8 +14,8 @@ const Nav = () => {
                 <Link href='/faq'><li className={styles.li}>FAQ</li></Link>
             </ul>
             <ul className={styles.ul2}>
-                <Link href='/login'><li className={styles.li}>Login</li></Link>
-                <Link href='/join'><li className={styles.li}>Regiter</li></Link>
+                <Link href='/users/login'><li className={styles.li}>Login</li></Link>
+                <Link href='/users/join'><li className={styles.li}>Regiter</li></Link>
             </ul>
         </div>  
     </div>

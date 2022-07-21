@@ -6,7 +6,8 @@ import { createSlice } from "@reduxjs/toolkit";
         id: 0,
         name: '',
         email: '',
-        password:''
+        password: '',
+        mobile:''
     },
     reducers: {
         setUserSlice: (state, action) => {

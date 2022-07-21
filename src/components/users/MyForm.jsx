@@ -17,7 +17,7 @@ const MyForm = () => {
         // user.id ===0 ? dispatch(addUsersSlice(user)) : dispatch(editUsersSlice)
         // user.id ===0 ? dispatch(addUsersSlice({...user,id:nanoid(8)})) : dispatch(editUsersSlice(user))
         if (user.name === "" || user.email === "" || user.password === "") {
-            alert('모든필드가 채워져야 합니다.')
+            alert('*표시의 필드는 채워져야 합니다.')
             return;
         }
         user.id === 0
@@ -27,7 +27,8 @@ const MyForm = () => {
             id : 0,
             name:"",
             email:"",
-            password:""
+            password: "",
+            mobile:''
         }))
     }
     return (
@@ -35,9 +36,10 @@ const MyForm = () => {
             <h3>사용자등록</h3>
             <Container >
                 <Input value={user.id} fullWidth disabled />
-                <Input onChange={handleChange('name')} type="text" placeholder="이름을 입력" value={user.name} fullWidth />
-                <Input onChange={handleChange('email')} type="email" placeholder="email을 입력" value={user.email} fullWidth />
-                <Input onChange={handleChange('password')} type="password" placeholder="비밀번호를 입력" value={user.password} fullWidth/>
+                <Input onChange={handleChange('name')} type="text" placeholder="* 이름을 입력" value={user.name} fullWidth />
+                <Input onChange={handleChange('email')} type="email" placeholder="* email을 입력" value={user.email} fullWidth />
+                <Input onChange={handleChange('password')} type="password" placeholder="* 비밀번호를 입력" value={user.password} fullWidth/>
+                <Input onChange={handleChange('mobile')} type="text" placeholder="휴대전화번호 입력" value={user.mobile} fullWidth/>
                 <Button onClick={handleSubmit} fullWidth variant="contained">submit</Button>
             </Container>
         </div>

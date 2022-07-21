@@ -1,4 +1,4 @@
-import Join from 'components/Join/Join'
+import Join from 'components/Users/Join'
 import React from 'react'
 
 const JoinPage = () => {

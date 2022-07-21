@@ -35,6 +35,7 @@ export default function Mytable() {
             <TableCell>Name</TableCell>
             <TableCell align="right">Email</TableCell>
             <TableCell align="right">Password</TableCell>
+            <TableCell align="right">Mobile</TableCell>
             <TableCell align="right">Edit</TableCell>
             <TableCell align="right">Delete</TableCell>
           </TableRow>
@@ -50,6 +51,7 @@ export default function Mytable() {
               </TableCell>
               <TableCell align="right">{row.email}</TableCell>
               <TableCell align="right">{row.password}</TableCell>
+              <TableCell align="right">{row.mobile}</TableCell>
               <TableCell align="right">
                 <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >수정</Button>
               </TableCell>
