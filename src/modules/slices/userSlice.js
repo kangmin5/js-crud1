@@ -13,8 +13,13 @@ import { createSlice } from "@reduxjs/toolkit";
         setUserSlice: (state, action) => {
             state = action.payload
             return state
+        },
+        logoutSlice: (state) => {
+            state = null;
+            return state; 
         }
     }
 })
-export const {setUserSlice} = user.actions
+export const { setUserSlice, logoutSlice } = user.actions
+
 export default user.reducer

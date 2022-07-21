@@ -116,7 +116,7 @@ const Join = () => {
                       </button>
                       <hr className="my-4"/>
                       <p className="mt-4 text-sm">기존 회원이신가요?  
-                          <Link href='/login'><a className="underline cursor-pointer">
+                          <Link href='/users/login'><a className="underline cursor-pointer">
                               login</a></Link><br/>
                       </p>
                   </div>

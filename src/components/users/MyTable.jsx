@@ -36,7 +36,7 @@ export default function Mytable() {
             <TableCell align="right">Email</TableCell>
             <TableCell align="right">Password</TableCell>
             <TableCell align="right">Mobile</TableCell>
-            <TableCell align="right">Edit</TableCell>
+      {/* <TableCell align="right">Edit</TableCell> */}
             <TableCell align="right">Delete</TableCell>
           </TableRow>
         </TableHead>
@@ -52,9 +52,9 @@ export default function Mytable() {
               <TableCell align="right">{row.email}</TableCell>
               <TableCell align="right">{row.password}</TableCell>
               <TableCell align="right">{row.mobile}</TableCell>
-              <TableCell align="right">
+            {/*  <TableCell align="right">
                 <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >수정</Button>
-              </TableCell>
+              </TableCell> */}
               <TableCell align="right">
                 {/*                <Button  onClick={()=>dispatch({ type: DELETE_USER_BY_ID, id:row.id })} */}
                 <Button  onClick={()=>dispatch({ type: DELETE_USER_BY_ID, id:row.id })} fullWidth variant="contained" >삭제</Button>
