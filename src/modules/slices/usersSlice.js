@@ -22,7 +22,7 @@ import { createSlice } from "@reduxjs/toolkit";
             return state
         },
         deleteUserSlice: (state, action) => {
-            state = state.filter((i)=>i.id !== action.payload.id)
+            state = state.filter((i)=>i.id !== action.payload)
             return state
         }
     }

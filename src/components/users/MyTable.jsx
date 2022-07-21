@@ -9,16 +9,23 @@ import Paper from '@mui/material/Paper';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '@mui/material';
 import { setUserSlice, user } from 'modules/slices';
-import { deleteUsersSlice } from 'modules/slices/usersSlice';
+// import { deleteUsersSlice } from 'modules/slices/usersSlice';
 import { DELETE_USER_BY_ID, GET_USERS } from 'modules/types';
 import styles from 'styles/user.module.css'
 
 
 export default function Mytable() {
+  // const [row,setRow]= useState([])
   const dispatch = useDispatch();
   const rows = useSelector(state => state.users)
-  React.useEffect(() => { dispatch({ type: GET_USERS })},[dispatch])
+  React.useEffect(() => {
+    dispatch({ type: GET_USERS })
+  }, [dispatch])
 
+  // const onDelete = (e) => {
+  //   e.preventDefault;
+  //   dispatch({ type: DELETE_USER_BY_ID, id:rows.id })
+  // }
   return (
     <TableContainer component={Paper} className={styles.table}>
       <h3>사용자목록</h3>
@@ -47,8 +54,8 @@ export default function Mytable() {
                 <Button onClick={()=>dispatch(setUserSlice(row))} fullWidth variant="contained" >수정</Button>
               </TableCell>
               <TableCell align="right">
-                <Button onClick={() => dispatch({ type: DELETE_USER_BY_ID, id:row.id })}
-                  fullWidth variant="contained" >삭제</Button>
+                {/*                <Button  onClick={()=>dispatch({ type: DELETE_USER_BY_ID, id:row.id })} */}
+                <Button  onClick={()=>dispatch({ type: DELETE_USER_BY_ID, id:row.id })} fullWidth variant="contained" >삭제</Button>
               </TableCell>
             </TableRow>
           ))}

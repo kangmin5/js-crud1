@@ -4,12 +4,12 @@ import { CREATE_USER, UPDATE_USER_BY_ID } from "modules/types";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserSlice } from "../../modules/slices/userSlice";
 import styles from 'styles/user.module.css'
-import { useState } from "react";
 
 const MyForm = () => {
     const user = useSelector(state => state.user)
     const dispatch = useDispatch();
     const handleChange = (prop) => (e) => {
+        e.preventDefault();
         dispatch(setUserSlice({ ...user, [prop]: e.target.value }))
         handleChange('')
     }
@@ -29,9 +29,7 @@ const MyForm = () => {
             email:"",
             password:""
         }))
-
     }
-
     return (
         <div className={styles.form}>
             <h3>사용자등록</h3>
